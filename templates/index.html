@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readme.so</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <img class="logo" src="../static/logo.png"></img>
+        
+        <h1>Welcome to Readme.so</h1>
+        <p class="subtitle">Generate beautiful README files from GitHub repositories</p>
+        
+        <form id="readme-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="repo-url">GitHub Repository URL</label>
+                <input type="text" id="repo-url" placeholder="https://github.com/username/repository">
+                
+                <div id="question-container" style="display: none;">
+                    <label for="question">Ask a question about this repository</label>
+                    <textarea id="question" rows="4" placeholder="What would you like to know about this repository?"></textarea>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn" id="submit-btn">Generate README</button>
+        </form>
+        
+        <p class="footer-text">
+            Generate beautiful README files automatically<br>
+            Created with ❤️ by Utsav Shah
+        </p>
+    </div>
+</body>
+<script src="../static/script.js"></script>
+</html>

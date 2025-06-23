@@ -1,0 +1,8 @@
+gitpython 
+langchain
+chromadb
+tiktoken
+google.generativeai
+markdown2
+flask
+flask-cors
